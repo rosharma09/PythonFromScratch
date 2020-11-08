@@ -1,0 +1,30 @@
+num = int(input('Enter the number:'))
+
+rem = num % 2
+
+if rem == 0:
+    print('EVEN')
+
+else:
+    print('ODD')
+
+print('End of the code')
+
+# if, elif , else
+
+x = 2
+
+if x == 1:
+    print('ONE')
+
+elif x == 2:
+    print('TWO')
+
+elif x == 3:
+    print('THREE')
+
+elif x == 4:
+    print('FOUR')
+
+else:
+    print('Wrong Input')

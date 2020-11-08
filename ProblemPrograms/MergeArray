@@ -1,0 +1,29 @@
+# program to merge given arrays into one single array
+
+from array import *
+from numpy import *
+
+# given arrays
+arr1 = array.array('i',[12,34,23,56,67])
+arr2 = array.array('i',[12,34,23,56,67])
+
+def arrayMerge(array1 , array2):
+    mergeArray = array('i',[])
+    mergeArrayLen = len(array1) + len(array2)
+
+    for i in range(len(array1)):
+        mergeArray.append(array1[i])
+    for j in range(len(array2)):
+        mergeArray.append(array2[j])
+
+    return mergeArray
+
+res = arrayMerge(arr1 , arr2)
+print("The merged array is :" + str(res))
+
+# use the concatenate function to merge the two arrays
+
+arr3 = array([12,34,23,56,67])
+arr4 = array([1,4,2,6,7])
+
+print(concatenate(arr3, arr4))
